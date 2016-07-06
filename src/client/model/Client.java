@@ -60,6 +60,7 @@ public class Client implements Runnable {
                             outputStream.flush();//turnoff write mode
                         }catch (IOException ioe){
                             end_loop = true;
+                            System.err.println("IOException " + ioe.getMessage());
                         }catch (NullPointerException npe){
                             System.err.println("disconnect from server: " + npe.getMessage());
                             System.exit(1);

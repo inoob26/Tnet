@@ -1,12 +1,10 @@
-package client;
+/*package client;
 
 import org.apache.commons.net.telnet.TelnetClient;
 
 import java.io.*;
 import java.nio.charset.Charset;
-/**
- * Created by inoob on 05/06/16.
- */
+
 public class Client implements Runnable {
     private static TelnetClient client;
     private static InputStream inputStream;
@@ -61,7 +59,6 @@ public class Client implements Runnable {
                 }
             }while((ret_read > 0) && (end_loop == false));
 
-
         }catch (Exception ex){
             ex.printStackTrace();
             System.err.println("Exception while connecting:" + ex.getMessage());
@@ -103,3 +100,6 @@ public class Client implements Runnable {
         }
     }
 }
+
+
+*/
