@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>TnetUtil</title>
+    <script type="text/javascript" src="js/validate.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <form action="index.jsp">
+    <form name="ip" action="index.jsp" onsubmit="return validateForm();">
         <input type="text" name="ipServer" placeholder="ip">
-
-        <input type="submit" value="Connect">
+        <select name="hardware">
+            <option>Cisco</option>
+            <option>Zelax</option>
+        </select>
+        <input type="submit" value="Connect" onclick="validateForm()">
     </form>
+    <p id="result"></p>
 </body>
 </html>

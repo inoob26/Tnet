@@ -5,6 +5,12 @@
     <title>TnetUtil</title>
 </head>
 <body>
-    <h1>IP: ${ param.ipServer } </h1>
+    <div>
+        <h1>IP: ${ param.ipServer } </h1>
+        <h1>Hardware Type : ${ param.hardware }</h1>
+
+
+    </div>
+
 </body>
 </html>
